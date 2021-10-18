@@ -1,5 +1,5 @@
 <template>
-  <div @scroll="showTop" class="container" ref="container">
+  <div @scroll="showTop" class="home-container" ref="container">
     <navbar class="nav-home"><div slot="center">购物车</div></navbar>
       <home-swiper :banners="banners"></home-swiper>
       <recommend-view :recommends="recommends"></recommend-view>
@@ -130,7 +130,7 @@ export default {
     top: 0;
     z-index: 9; */
 }
-.container{
+.home-container{
   height: calc(100vh - 49px);
   overflow-y: scroll;
 }
