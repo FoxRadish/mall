@@ -1,20 +1,21 @@
 <template>
-    <div>
-        <router-view></router-view>
-        <mintabbar></mintabbar>
-    </div>
+  <div>
+    <keep-alive exclude="Detail">
+      <router-view />
+    </keep-alive>
+    <mintabbar />
+  </div>
 </template>
 
 <script>
-import MintabbarVue from '../../comment/Mintabbar.vue'
+import MintabbarVue from "../../comment/Mintabbar.vue";
 
 export default {
-    components: {
-        mintabbar:MintabbarVue
-    }
-}
+  components: {
+    mintabbar: MintabbarVue,
+  },
+};
 </script>
 
 <style>
-
 </style>

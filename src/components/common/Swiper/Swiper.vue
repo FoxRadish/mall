@@ -70,7 +70,7 @@
       scrollContent: function (currentPosition) {
         // 0.设置正在滚动
         this.scrolling = true;
-
+    
         // 1.开始滚动动画
         this.swiperStyle.transition ='transform '+ this.animDuration + 'ms';
         this.setTransform(currentPosition);

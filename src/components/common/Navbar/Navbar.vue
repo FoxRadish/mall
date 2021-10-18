@@ -19,8 +19,11 @@ export default {
     line-height: 44px;
     text-align: center;
     box-shadow: 0 1px 3px rgba(100, 100, 100, .1);
-}
-.left .right{
+    position: sticky;
+    top: 0;
+    z-index: 4;
+} 
+.left,.right{
     width: 60px;
 }
 .center{
